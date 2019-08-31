@@ -1,0 +1,11 @@
+<h1>This is the todo site</h1>
+
+<ul>
+  {% for i in item_list %}
+    <a href="/delete/{{i.id}}"><li>{{ i }}</li></a>
+  {% endfor %}
+</ul>
+<form action = "/addItem" method = "post">{% csrf_token %}
+  <input type = "text" name = "content" value = "Enter New Item">
+  <input type = "submit" value = "Add">
+</form>
