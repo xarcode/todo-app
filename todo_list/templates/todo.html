@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title></title>
+  </head>
+  <body>
+    <div class="page">
+      <h1>This is the todo site</h1>
+      <form action = "/addItem" method = "post">{% csrf_token %}
+        <input type = "text" name = "content" placeholder = "Enter New Item">
+        <input type = "submit" value = "Add">
+      </form>
+      {% for i in item_list %}
+      <a href="/delete/{{i.id}}"><p>{{ i }}</p></a>
+      {% endfor %}
+  </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+.page{
+  font-size: 100%;
+  width: 85%;
+  margin: 50px auto;
+}
+
+.page h1{
+  text-align: center;
+  color: white;
+  font-family: Lucida Console;
+  font-size: 3vw;
+  background-color: #93C5A8;
+  padding: 2vw;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.page p{
+  text-align: center;
+  border: 0;
+  font-size: 1.5vw;
+}
+
+.page a{
+  display: block;
+  color: black;
+  text-decoration: none;
+  background-color: #cfcac2;
+  width: 50%;
+  border-bottom: 2px solid black;
+  margin: 2px auto;
+  padding-top: 5px;
+}
+.page a:hover{
+  font-style:oblique;
+}
+
+.page input[type=text]{
+  display: block;
+  width: 70%;
+  margin: 2px auto;
+  padding: 12px 20px;
+}
+
+.page input[type=text]:focus{
+  background-color: lightblue;
+  color: white;
+}
+.page input[type=submit]{
+  display: block;
+  width: 70%;
+  margin: 2px auto;
+}
